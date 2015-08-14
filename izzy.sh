@@ -39,6 +39,10 @@ exit $2
 
 readonly in_linux_distro=$(lsb_release -i | awk '{print $3}')
 readonly in_distro_version=$(cat /etc/redhat-release | awk '{ print $3}' | awk 'BEGIN { FS = "." } ; { print $1}')
+readonly in_check_mysql=$(type mysql >/dev/null 2>&1 && echo "1" || echo "0")
+readonly in_check_http=$(type httpd >/dev/null 2>&1 && echo "1" || echo "0")
+readonly in_check_nginx=$(type nginx >/dev/null 2>&1 && echo "1" || echo "0")
+readonly in_check_lsws=$(type /usr/local/lsws/bin/lswsctrl >/dev/null 2>&1 && echo "1" || echo "0")
 
 # Checking linux distro
 if [ "$in_linux_distro" != "Centos" ]; then
@@ -50,6 +54,23 @@ fi
 yum install -y epel-release
 #install development tools
 yum groupinstall -y "Development Tools"
-if ["$in_distro_version" == 5]
-    wget 
+
+#check software
+if ["$in_check_mysql"]; then
+    in_lib_echo_fail "MySQL da duoc cai dat. Ban vui long go bo MySQL hien tai de tiep tuc"
+    exit 100
 fi
+if ["$in_check_http"]; then
+    in_lib_echo_fail "Apache da duoc cai dat. Ban vui long go bo Apache hien tai de tiep tuc"
+    exit 100
+fi
+if ["$in_check_nginx"]; then
+    in_lib_echo_fail "NGINX da duoc cai dat. Ban vui long go bo NGINX hien tai de tiep tuc"
+    exit 100
+fi
+if ["$in_check_lsws"]; then
+    in_lib_echo_fail "Litespeed da duoc cai dat. Ban vui long go bo Litespeed hien tai de tiep tuc"
+    exit 100
+fi
+
+#install MariaDB 
