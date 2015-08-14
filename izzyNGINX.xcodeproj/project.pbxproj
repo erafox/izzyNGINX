@@ -1,0 +1,72 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		CD1E4CE71B749D95008F4DBB /* izzy.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = izzy.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CD1E4CE01B749D64008F4DBB = {
+			isa = PBXGroup;
+			children = (
+				CD1E4CE71B749D95008F4DBB /* izzy.sh */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		CD1E4CE11B749D64008F4DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = CD1E4CE41B749D64008F4DBB /* Build configuration list for PBXProject "izzyNGINX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD1E4CE01B749D64008F4DBB;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		CD1E4CE51B749D64008F4DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CD1E4CE61B749D64008F4DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1E4CE41B749D64008F4DBB /* Build configuration list for PBXProject "izzyNGINX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1E4CE51B749D64008F4DBB /* Debug */,
+				CD1E4CE61B749D64008F4DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD1E4CE11B749D64008F4DBB /* Project object */;
+}
