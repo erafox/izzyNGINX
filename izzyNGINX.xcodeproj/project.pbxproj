@@ -8,12 +8,14 @@
 
 /* Begin PBXFileReference section */
 		CD1E4CE71B749D95008F4DBB /* izzy.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = izzy.sh; sourceTree = "<group>"; };
+		CD34624F1B7DEB4200E7698D /* repo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = repo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		CD1E4CE01B749D64008F4DBB = {
 			isa = PBXGroup;
 			children = (
+				CD34624F1B7DEB4200E7698D /* repo */,
 				CD1E4CE71B749D95008F4DBB /* izzy.sh */,
 			);
 			sourceTree = "<group>";
